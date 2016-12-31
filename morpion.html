@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MORPION</title>
+</head>
+<body>
+<header>
+    <nav class="lime lighten-1">
+      <h2 class="center-align">MORPION</h2>
+</header>
+<div id=statut>Le Jeu va demarrer<br>
+  Joueur X commence</div>
+  <div id=vainqueur>Qui va gagner ?</div>
+<div class="container plateau">
+
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+    <div class="hoverable bloc"></div>
+
+      </div>
+<div></div>
+
+<style >
+  .bloc{
+    width:25vh;
+    height:25vh;
+    font-size: 65px;
+    margin-left: 0.5px;
+    box-sizing: border-box;
+    border:1px solid #afb42b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloc:hover{
+    background-color:#afb42b;
+    cursor: pointer;
+
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 470px;
+    height: 470px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  #statut{
+    font-size:35px;
+    color:#FF4081;
+    font-weight: bold;
+    position: absolute;
+    margin-top:180px;
+    margin-left:25px;;
+  }
+  #vainqueur{
+    font-size:35px;
+    color:#FF4081;
+    font-weight: bold;
+    position: absolute;
+    margin-top:200px;
+    margin-left:950px;
+  }
+</style>
+    <footer class="page-footer lime lighten-1">
+      <div class="footer-copyright">
+        <div class="container">
+        © 2016 Copyright Rama
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Simplon-Ramab">Voir mon portfolio</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+    </body>
+    </html>
